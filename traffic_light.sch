@@ -1451,17 +1451,17 @@ type 0204, grid 7.5 mm</description>
 <attribute name="NAME" x="162.56" y="86.995" size="1.778" layer="95"/>
 <attribute name="VALUE" x="162.56" y="68.58" size="1.778" layer="96"/>
 </instance>
-<instance part="R6" gate="G$1" x="182.88" y="73.66" smashed="yes" grouprefs="DISPLAY">
-<attribute name="NAME" x="179.07" y="75.1586" size="1.778" layer="95"/>
-<attribute name="VALUE" x="179.07" y="70.358" size="1.778" layer="96"/>
+<instance part="R6" gate="G$1" x="182.88" y="76.2" smashed="yes" grouprefs="DISPLAY">
+<attribute name="NAME" x="179.07" y="77.6986" size="1.778" layer="95"/>
+<attribute name="VALUE" x="179.07" y="72.898" size="1.778" layer="96"/>
 </instance>
 <instance part="D4" gate="G$1" x="213.36" y="78.74" smashed="yes" grouprefs="DISPLAY">
 <attribute name="NAME" x="208.28" y="86.995" size="1.778" layer="95"/>
 <attribute name="VALUE" x="208.28" y="68.58" size="1.778" layer="96"/>
 </instance>
-<instance part="R8" gate="G$1" x="228.6" y="73.66" smashed="yes" grouprefs="DISPLAY">
-<attribute name="NAME" x="224.79" y="75.1586" size="1.778" layer="95"/>
-<attribute name="VALUE" x="224.79" y="70.358" size="1.778" layer="96"/>
+<instance part="R8" gate="G$1" x="228.6" y="76.2" smashed="yes" grouprefs="DISPLAY">
+<attribute name="NAME" x="224.79" y="77.6986" size="1.778" layer="95"/>
+<attribute name="VALUE" x="224.79" y="72.898" size="1.778" layer="96"/>
 </instance>
 <instance part="R1" gate="G$1" x="210.82" y="167.64" smashed="yes" grouprefs="LEDS">
 <attribute name="NAME" x="207.01" y="169.1386" size="1.778" layer="95"/>
@@ -1491,9 +1491,9 @@ type 0204, grid 7.5 mm</description>
 <attribute name="NAME" x="269.875" y="82.55" size="1.778" layer="95"/>
 <attribute name="VALUE" x="274.955" y="80.01" size="1.778" layer="96"/>
 </instance>
-<instance part="CLK_PINHD" gate="A" x="78.74" y="106.68" smashed="yes" grouprefs="CLOCK">
-<attribute name="NAME" x="72.39" y="112.395" size="1.778" layer="95"/>
-<attribute name="VALUE" x="72.39" y="99.06" size="1.778" layer="96"/>
+<instance part="CLK_PINHD" gate="A" x="83.82" y="109.22" smashed="yes" grouprefs="CLOCK">
+<attribute name="NAME" x="77.47" y="114.935" size="1.778" layer="95"/>
+<attribute name="VALUE" x="77.47" y="101.6" size="1.778" layer="96"/>
 </instance>
 <instance part="LED1" gate="G$1" x="220.98" y="167.64" smashed="yes" rot="R90">
 <attribute name="NAME" x="225.552" y="171.196" size="1.778" layer="95" rot="R180"/>
@@ -1510,6 +1510,30 @@ type 0204, grid 7.5 mm</description>
 <instance part="LED3" gate="G$1" x="220.98" y="139.7" smashed="yes" rot="R90">
 <attribute name="NAME" x="225.552" y="143.256" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="225.552" y="145.415" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="V5" gate="/+UB" x="116.84" y="167.64" smashed="yes" rot="R90" grouprefs="COUNTER">
+<attribute name="NAME" x="118.11" y="168.91" size="1.524" layer="95" rot="R90"/>
+</instance>
+<instance part="V5" gate="/-UB" x="132.08" y="167.64" smashed="yes" rot="R90" grouprefs="COUNTER">
+<attribute name="NAME" x="132.08" y="168.91" size="1.524" layer="95" rot="R90"/>
+</instance>
+<instance part="V4" gate="/+UB" x="81.28" y="162.56" smashed="yes" rot="R270" grouprefs="COUNTER_CONTROLLER">
+<attribute name="NAME" x="80.01" y="161.29" size="1.524" layer="95" rot="R270"/>
+</instance>
+<instance part="V4" gate="/-UB" x="81.28" y="167.64" smashed="yes" rot="R90" grouprefs="COUNTER_CONTROLLER">
+<attribute name="NAME" x="81.28" y="168.91" size="1.524" layer="95" rot="R90"/>
+</instance>
+<instance part="V1" gate="/+UB" x="60.96" y="129.54" smashed="yes" rot="R90" grouprefs="COUNTER_CONTROLLER">
+<attribute name="NAME" x="62.23" y="130.81" size="1.524" layer="95" rot="R90"/>
+</instance>
+<instance part="V1" gate="/-UB" x="93.98" y="129.54" smashed="yes" rot="R180" grouprefs="COUNTER_CONTROLLER">
+<attribute name="NAME" x="92.71" y="129.54" size="1.524" layer="95" rot="R180"/>
+</instance>
+<instance part="V3" gate="/+UB" x="185.42" y="160.02" smashed="yes" rot="R270">
+<attribute name="NAME" x="184.15" y="158.75" size="1.524" layer="95" rot="R270"/>
+</instance>
+<instance part="V3" gate="/-UB" x="185.42" y="162.56" smashed="yes" rot="R90">
+<attribute name="NAME" x="185.42" y="163.83" size="1.524" layer="95" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -1672,8 +1696,28 @@ type 0204, grid 7.5 mm</description>
 </segment>
 <segment>
 <pinref part="CLK_PINHD" gate="A" pin="1"/>
-<wire x1="76.2" y1="109.22" x2="71.12" y2="109.22" width="0.1524" layer="91" grouprefs="CLOCK"/>
-<label x="71.12" y="109.22" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="CLOCK"/>
+<wire x1="81.28" y1="111.76" x2="76.2" y2="111.76" width="0.1524" layer="91" grouprefs="CLOCK"/>
+<label x="76.2" y="111.76" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="CLOCK"/>
+</segment>
+<segment>
+<pinref part="V5" gate="/+UB" pin="+UB"/>
+<wire x1="114.3" y1="167.64" x2="111.76" y2="167.64" width="0.1524" layer="91" grouprefs="COUNTER"/>
+<label x="111.76" y="167.64" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="COUNTER"/>
+</segment>
+<segment>
+<pinref part="V4" gate="/+UB" pin="+UB"/>
+<wire x1="83.82" y1="162.56" x2="86.36" y2="162.56" width="0.1524" layer="91" grouprefs="COUNTER_CONTROLLER"/>
+<label x="86.36" y="162.56" size="1.27" layer="95" xref="yes" grouprefs="COUNTER_CONTROLLER"/>
+</segment>
+<segment>
+<pinref part="V1" gate="/+UB" pin="+UB"/>
+<wire x1="58.42" y1="129.54" x2="55.88" y2="129.54" width="0.1524" layer="91" grouprefs="COUNTER_CONTROLLER"/>
+<label x="55.88" y="129.54" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="COUNTER_CONTROLLER"/>
+</segment>
+<segment>
+<pinref part="V3" gate="/+UB" pin="+UB"/>
+<wire x1="187.96" y1="160.02" x2="190.5" y2="160.02" width="0.1524" layer="91"/>
+<label x="190.5" y="160.02" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -1744,13 +1788,13 @@ type 0204, grid 7.5 mm</description>
 </segment>
 <segment>
 <pinref part="R6" gate="G$1" pin="2"/>
-<wire x1="187.96" y1="73.66" x2="190.5" y2="73.66" width="0.1524" layer="91" grouprefs="DISPLAY"/>
-<label x="190.5" y="73.66" size="1.27" layer="95" xref="yes" grouprefs="DISPLAY"/>
+<wire x1="187.96" y1="76.2" x2="190.5" y2="76.2" width="0.1524" layer="91" grouprefs="DISPLAY"/>
+<label x="190.5" y="76.2" size="1.27" layer="95" xref="yes" grouprefs="DISPLAY"/>
 </segment>
 <segment>
 <pinref part="R8" gate="G$1" pin="2"/>
-<wire x1="233.68" y1="73.66" x2="236.22" y2="73.66" width="0.1524" layer="91" grouprefs="DISPLAY"/>
-<label x="236.22" y="73.66" size="1.27" layer="95" xref="yes" grouprefs="DISPLAY"/>
+<wire x1="233.68" y1="76.2" x2="236.22" y2="76.2" width="0.1524" layer="91" grouprefs="DISPLAY"/>
+<label x="236.22" y="76.2" size="1.27" layer="95" xref="yes" grouprefs="DISPLAY"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="A" pin="RBI"/>
@@ -1759,8 +1803,28 @@ type 0204, grid 7.5 mm</description>
 </segment>
 <segment>
 <pinref part="CLK_PINHD" gate="A" pin="2"/>
-<wire x1="76.2" y1="106.68" x2="71.12" y2="106.68" width="0.1524" layer="91" grouprefs="CLOCK"/>
-<label x="71.12" y="106.68" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="CLOCK"/>
+<wire x1="81.28" y1="109.22" x2="76.2" y2="109.22" width="0.1524" layer="91" grouprefs="CLOCK"/>
+<label x="76.2" y="109.22" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="CLOCK"/>
+</segment>
+<segment>
+<pinref part="V5" gate="/-UB" pin="-UB"/>
+<wire x1="134.62" y1="167.64" x2="137.16" y2="167.64" width="0.1524" layer="91" grouprefs="COUNTER"/>
+<label x="137.16" y="167.64" size="1.27" layer="95" xref="yes" grouprefs="COUNTER"/>
+</segment>
+<segment>
+<pinref part="V4" gate="/-UB" pin="-UB"/>
+<wire x1="83.82" y1="167.64" x2="86.36" y2="167.64" width="0.1524" layer="91" grouprefs="COUNTER_CONTROLLER"/>
+<label x="86.36" y="167.64" size="1.27" layer="95" xref="yes" grouprefs="COUNTER_CONTROLLER"/>
+</segment>
+<segment>
+<pinref part="V1" gate="/-UB" pin="-UB"/>
+<wire x1="93.98" y1="132.08" x2="93.98" y2="134.62" width="0.1524" layer="91" grouprefs="COUNTER_CONTROLLER"/>
+<label x="93.98" y="134.62" size="1.27" layer="95" rot="R90" xref="yes" grouprefs="COUNTER_CONTROLLER"/>
+</segment>
+<segment>
+<pinref part="V3" gate="/-UB" pin="-UB"/>
+<wire x1="187.96" y1="162.56" x2="190.5" y2="162.56" width="0.1524" layer="91"/>
+<label x="190.5" y="162.56" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="Q5" class="0">
@@ -1853,8 +1917,8 @@ type 0204, grid 7.5 mm</description>
 </segment>
 <segment>
 <pinref part="CLK_PINHD" gate="A" pin="3"/>
-<wire x1="76.2" y1="104.14" x2="71.12" y2="104.14" width="0.1524" layer="91" grouprefs="CLOCK"/>
-<label x="71.12" y="104.14" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="CLOCK"/>
+<wire x1="81.28" y1="106.68" x2="76.2" y2="106.68" width="0.1524" layer="91" grouprefs="CLOCK"/>
+<label x="76.2" y="106.68" size="1.27" layer="95" rot="R180" xref="yes" grouprefs="CLOCK"/>
 </segment>
 </net>
 <net name="LD" class="0">
@@ -2151,20 +2215,6 @@ type 0204, grid 7.5 mm</description>
 <wire x1="220.98" y1="93.98" x2="223.52" y2="93.98" width="0.1524" layer="91" grouprefs="DISPLAY"/>
 </segment>
 </net>
-<net name="N$3" class="0">
-<segment>
-<pinref part="D3" gate="G$1" pin="CK2"/>
-<pinref part="R6" gate="G$1" pin="1"/>
-<wire x1="175.26" y1="73.66" x2="177.8" y2="73.66" width="0.1524" layer="91" grouprefs="DISPLAY"/>
-</segment>
-</net>
-<net name="N$4" class="0">
-<segment>
-<pinref part="D4" gate="G$1" pin="CK2"/>
-<pinref part="R8" gate="G$1" pin="1"/>
-<wire x1="220.98" y1="73.66" x2="223.52" y2="73.66" width="0.1524" layer="91" grouprefs="DISPLAY"/>
-</segment>
-</net>
 <net name="RBI" class="0">
 <segment>
 <pinref part="IC2" gate="A" pin="RBI"/>
@@ -2245,6 +2295,20 @@ type 0204, grid 7.5 mm</description>
 <pinref part="J1" gate="G$1" pin="1"/>
 <pinref part="S2" gate="1" pin="P"/>
 <wire x1="261.62" y1="73.66" x2="266.7" y2="73.66" width="0.1524" layer="91" grouprefs="POWER"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="D3" gate="G$1" pin="CK1"/>
+<pinref part="R6" gate="G$1" pin="1"/>
+<wire x1="175.26" y1="76.2" x2="177.8" y2="76.2" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="D4" gate="G$1" pin="CK1"/>
+<pinref part="R8" gate="G$1" pin="1"/>
+<wire x1="220.98" y1="76.2" x2="223.52" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
